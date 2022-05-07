@@ -3,7 +3,7 @@ import React from "react";
 const Blogs = () => {
   return (
     <div className="row mt-3">
-      <div class="mx-auto border border-white col-8">
+      <div className="mx-auto border border-white col-8">
         <h5 className="card-title">Difference between javascript and nodejs</h5>
         <p className="card-text">
           JavaScript is a simple programming language that runs in any browser
@@ -12,7 +12,7 @@ const Blogs = () => {
           excesses.
         </p>
       </div>
-      <div class="mx-auto border border-white col-8 mt-2">
+      <div className="mx-auto border border-white col-8 mt-2">
         <h5 className="card-title">
           When should you use nodejs and when should you use mongodb
         </h5>
@@ -26,7 +26,7 @@ const Blogs = () => {
           massive scale, when you are rapidly prototyping, and a few other use
         </p>
       </div>
-      <div class="mx-auto border border-white col-8 mt-2">
+      <div className="mx-auto border border-white col-8 mt-2">
         <h5 className="card-title">
           Differences between sql and nosql databases.
         </h5>
@@ -35,7 +35,7 @@ const Blogs = () => {
           horizontally scalable.
         </p>
       </div>
-      <div class="mx-auto border border-white col-8 mt-2">
+      <div className="mx-auto border border-white col-8 mt-2">
         <h5 className="card-title">
           What is the purpose of jwt and how does it work
         </h5>
