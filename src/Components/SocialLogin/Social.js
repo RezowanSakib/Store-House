@@ -1,6 +1,9 @@
 import React from "react";
 import { Button, Row } from "react-bootstrap";
-import { useSignInWithGoogle } from "react-firebase-hooks/auth";
+import {
+  useSignInWithFacebook,
+  useSignInWithGoogle,
+} from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 
 const Social = () => {
@@ -8,6 +11,12 @@ const Social = () => {
   const handleGoogleLogin = (e) => {
     e.preventDefault();
     signInWithGoogle();
+  };
+  const [signInWithFacebook, fbuser, fbloading, fberror] =
+    useSignInWithFacebook(auth);
+  const handleFbLogin = (e) => {
+    e.preventDefault();
+    signInWithFacebook();
   };
 
   return (
@@ -22,7 +31,10 @@ const Social = () => {
         </button>
       </Row>
       <Row>
-        <Button className="p-2 rounded-pill bg-secondary text-light">
+        <Button
+          className="p-2 rounded-pill bg-secondary text-light"
+          onClick={handleFbLogin}
+        >
           Login With Facebook
           <i className="fa-brands fa-google  mx-2"></i>
         </Button>
