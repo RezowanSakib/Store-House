@@ -9,7 +9,7 @@ const AllProducts = ({ product }) => {
     navigate(`/product/${_id}`);
   };
   return (
-    <div className="container col-md-4">
+    <div className="col-md-4 ">
       <CardGroup>
         <Card className="h-100 shadow">
           <Card.Img variant="top" src={img} />
@@ -26,7 +26,7 @@ const AllProducts = ({ product }) => {
               navigateToEnroll(_id);
             }}
           >
-            See More
+            update
           </Button>
         </Card>
       </CardGroup>

@@ -5,10 +5,16 @@ import banner1 from "../../logistic.png";
 import banner3 from "../../room.jpg";
 import useProduct from "../../Hooks/useProduct";
 import AllProducts from "../AllProducts/AllProducts";
+import { Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const { product } = useProduct();
   const products = product.slice(0, 6);
+  const navigate = useNavigate();
+  const navigateToInventory = () => {
+    navigate(`/inventory`);
+  };
   return (
     <div>
       <h3>this is home page</h3>
@@ -30,15 +36,15 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="container mb-5">
         <h1>All Products({product.length})</h1>
-        <div>
+        <div className="row">
           {products.map((product) => (
             <AllProducts key={product._id} product={product}></AllProducts>
           ))}
         </div>
       </div>
-      <button>See all products</button>
+      <Button onClick={navigateToInventory}>See All Product</Button>
     </div>
   );
 };

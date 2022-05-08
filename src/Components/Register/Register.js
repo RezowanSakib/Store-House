@@ -10,11 +10,11 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
-  // const handleRegister = (e) => {
-  //   e.preventDefault();
+   const handleRegister = (e) => {
+    e.preventDefault();
 
-  //   createUserWithEmailAndPassword(email, password);
-  // };
+     createUserWithEmailAndPassword(email, password);
+   };
   const navigate = useNavigate();
   const navigateLogin = () => {
     navigate("/login");
@@ -25,7 +25,7 @@ const Register = () => {
   return (
     <div className="container">
       <div className="row  ">
-        <Form className="col-md-4 mx-auto mt-5 bg-light p-5 shadow-lg rounded">
+        <Form className="col-md-4 mx-auto mt-5 bg-light p-5 shadow-lg rounded" onSubmit={handleRegister}>
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridEmail">
               <Form.Label>Email</Form.Label>
@@ -82,7 +82,7 @@ const Register = () => {
             <Form.Check type="checkbox" label="Check me out" />
           </Form.Group> */}
 
-          <Button variant="primary" type="submit" onClick={() => createUserWithEmailAndPassword(email, password)}>
+          <Button variant="primary" type="submit" >
             Register
           </Button>
           <Social></Social>
