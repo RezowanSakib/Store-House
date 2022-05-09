@@ -1,12 +1,13 @@
 import React from "react";
 
-import banner2 from "../../kargo.jpg";
 import banner1 from "../../logistic.png";
-import banner3 from "../../room.jpg";
+
 import useProduct from "../../Hooks/useProduct";
 import AllProducts from "../AllProducts/AllProducts";
 import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import OurService from "../OurService/OurService";
+import About from "../About/About";
 
 const Home = () => {
   const { product } = useProduct();
@@ -21,7 +22,7 @@ const Home = () => {
   return (
     <div>
       <div className="container">
-        <div className="row m-3 align-items-center bg-light">
+        <div className="row m-3 align-items-center bg-light g-2">
           <div className="col-md-6 ">
             <h2>UNBEATABLE TRUCKING AND</h2>
             <h2>TRANSPORT SERVICE</h2>
@@ -40,7 +41,17 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <Button onClick={navigateToInventory}>See All Product</Button>
+      <Button onClick={navigateToInventory}>See All Product</Button>  
+      <div className="container"> <hr />
+        <h2>Our Services</h2>
+        <div className="mx-auto">
+          <OurService></OurService>
+        </div>
+        <hr />
+      </div>
+      <div className="container my-4">
+        <About></About>
+      </div>
     </div>
   );
 };
