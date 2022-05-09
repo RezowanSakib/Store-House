@@ -15,24 +15,20 @@ const Home = () => {
   const navigateToInventory = () => {
     navigate(`/inventory`);
   };
+  const navigateToAdd = () => {
+    navigate(`/addproduct`);
+  };
   return (
     <div>
-      <h3>this is home page</h3>
       <div className="container">
-        <div className="row">
-          <div className="col-6">
-            <div className="row">
-              <div className="col-6">
-                <img src={banner3} className="img-fluid" alt="" />
-              </div>
-              <div className="col-6">
-                <img src={banner2} className="img-fluid" alt="" />
-              </div>
-
-              <div className="col-6">
-                <img src={banner1} className="img-fluid" alt="" />
-              </div>
-            </div>
+        <div className="row m-3 align-items-center bg-light">
+          <div className="col-md-6 ">
+            <h2>UNBEATABLE TRUCKING AND</h2>
+            <h2>TRANSPORT SERVICE</h2>
+            <Button onClick={navigateToAdd}>Store Your Product</Button>
+          </div>
+          <div className="col-md-6 ">
+            <img src={banner1} className="img-fluid rounded" alt="" />
           </div>
         </div>
       </div>

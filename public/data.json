@@ -2,57 +2,68 @@
   {
     "img": "./room.jpg",
     "description": "",
+    "quantity":"10",
     "suplier": "Saunders Knight"
   },
   {
-    "_id": "6276b2f45ddb3d4a091c8334",
+    
     "img": "./room.jpg",
     "description": "",
+    "quantity":"10",
     "suplier": "Taylor Melendez"
   },
   {
     "img": "./room.jpg",
     "description": "",
+    "quantity":"10",
     "suplier": "Jeannie Becker"
   },
   {
     "img": "./room.jpg",
     "description": "",
+    "quantity":"10",
     "suplier": "Shari Turner"
   },
   {
     "img": "./room.jpg",
     "description": "",
+    "quantity":"10",
     "suplier": "Faye Hayes"
   },
   {
     "img": "./room.jpg",
     "description": "",
+    "quantity":"10",
     "suplier": "Joyce Craig"
   },
   {
     "img": "./room.jpg",
     "description": "",
+    "quantity":"10",
     "suplier": "Reese Weiss"
   },
   {
     "img": "./room.jpg",
     "description": "",
+    "quantity":"10",
     "suplier": "Schmidt Wynn"
   },
   {
     "img": "./room.jpg",
     "description": "",
+    "quantity":"10",
     "suplier": "Riddle Sharpe"
   },
   {
     "img": "./room.jpg",
     "description": "",
+    "quantity":"10",
     "suplier": "Barr Carroll"
   },
   {
     "img": "./room.jpg",
     "description": "",
+    "quantity":"10",
     "suplier": "Lorene Golden"
   }
 ]

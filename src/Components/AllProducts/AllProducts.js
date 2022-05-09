@@ -1,9 +1,9 @@
 import React from "react";
 import { Button, Card, CardGroup } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 const AllProducts = ({ product }) => {
-  const { suplier, img, description, _id, price } = product;
+  const { suplier, img, description, _id, quantity } = product;
   const navigate = useNavigate();
   const navigateToEnroll = (_id) => {
     navigate(`/product/${_id}`);
@@ -15,7 +15,7 @@ const AllProducts = ({ product }) => {
           <Card.Img variant="top" src={img} />
           <Card.Body>
             <Card.Title>{suplier}</Card.Title>
-            <h4>${price}</h4>
+            <h4>Quantity {quantity}</h4>
             <Card.Text>{description}</Card.Text>
           </Card.Body>
 
