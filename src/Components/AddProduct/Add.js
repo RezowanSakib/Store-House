@@ -25,6 +25,11 @@ const AddService = () => {
       <form className="d-flex flex-column" onSubmit={handleSubmit(onSubmit)}>
         <input
           className="mb-2"
+          placeholder="name"
+          {...register("name", { required: true, maxLength: 20 })}
+        />
+        <input
+          className="mb-2"
           placeholder="Suplier name"
           {...register("suplier", { required: true, maxLength: 20 })}
         />
