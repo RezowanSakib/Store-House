@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-
+import { useForm } from "react-hook-form";
 const UpdateProduct = () => {
+  const { register, handleSubmit } = useForm();
   const { productId } = useParams();
   const [product, setProduct] = useState({});
   useEffect(() => {
-    const url = `http://localhost:5000/product/${productId}`;
+    const url = `https://afternoon-springs-85105.herokuapp.com/product/${productId}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setProduct(data));
@@ -19,7 +20,7 @@ const UpdateProduct = () => {
     const updatedProduct = { suplierName, quantity };
 
     // send data to the server
-    const url = `http://localhost:5000/product/${productId}`;
+    const url = `https://afternoon-springs-85105.herokuapp.com/product/${productId}`;
     fetch(url, {
       method: "PUT",
       headers: {
@@ -48,4 +49,4 @@ const UpdateProduct = () => {
   );
 };
 
-export default UpdateProduct ;
+export default UpdateProduct;

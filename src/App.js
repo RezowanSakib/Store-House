@@ -7,6 +7,7 @@ import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import Inventory from "./Components/Inventory/Inventory";
 import Login from "./Components/Login/Login";
+import ManageItem from "./Components/ManageItem/ManageItem";
 import MyProduct from "./Components/Myproduct/MyProduct";
 import NotFound from "./Components/NotFound/NotFound";
 import Register from "./Components/Register/Register";
@@ -29,6 +30,7 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/addproduct" element={<Add></Add>}></Route>
+        <Route path="/ManageItem" element={<ManageItem></ManageItem>}></Route>
         <Route path="/myproduct" element={<MyProduct></MyProduct>}></Route>
         <Route path="/inventory" element={<Inventory></Inventory>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>

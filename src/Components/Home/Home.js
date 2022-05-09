@@ -14,7 +14,7 @@ const Home = () => {
   const products = product.slice(0, 6);
   const navigate = useNavigate();
   const navigateToInventory = () => {
-    navigate(`/inventory`);
+    navigate(`/ManageItem`);
   };
   const navigateToAdd = () => {
     navigate(`/addproduct`);
@@ -41,7 +41,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <Button onClick={navigateToInventory}>See All Product</Button>  
+      <Button onClick={navigateToInventory}>Manage Product</Button>  
       <div className="container"> <hr />
         <h2>Our Services</h2>
         <div className="mx-auto">

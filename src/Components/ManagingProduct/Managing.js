@@ -1,13 +1,9 @@
 import React from "react";
 import { Button, Card, CardGroup } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
 
-const AllProducts = ({ product }) => {
+const Managing = ({ handleDelete, product }) => {
   const { name, suplier, img, description, _id, quantity, price } = product;
-  const navigate = useNavigate();
-  const navigateToEnroll = (_id) => {
-    navigate(`/product/${_id}`);
-  };
+
   return (
     <div className="col-md-4 ">
       <CardGroup>
@@ -26,10 +22,10 @@ const AllProducts = ({ product }) => {
             variant="secondary"
             size="lg"
             onClick={() => {
-              navigateToEnroll(_id);
+              handleDelete(_id);
             }}
           >
-            update
+            Delete
           </Button>
         </Card>
       </CardGroup>
@@ -37,4 +33,4 @@ const AllProducts = ({ product }) => {
   );
 };
 
-export default AllProducts;
+export default Managing;

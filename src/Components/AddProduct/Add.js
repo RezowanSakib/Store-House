@@ -5,8 +5,7 @@ const AddService = () => {
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
-    
-    const url = `http://localhost:5000/product`;
+    const url = `https://afternoon-springs-85105.herokuapp.com/product`;
     fetch(url, {
       method: "POST",
       headers: {
@@ -19,7 +18,6 @@ const AddService = () => {
         console.log(result);
       });
   };
- 
 
   return (
     <div className="w-50 mx-auto">

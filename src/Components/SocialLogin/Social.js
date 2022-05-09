@@ -4,6 +4,7 @@ import {
   useSignInWithFacebook,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
+import { useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 
 const Social = () => {
@@ -12,13 +13,16 @@ const Social = () => {
     e.preventDefault();
     signInWithGoogle();
   };
+  const navigate = useNavigate();
   const [signInWithFacebook, fbuser, fbloading, fberror] =
     useSignInWithFacebook(auth);
   const handleFbLogin = (e) => {
     e.preventDefault();
     signInWithFacebook();
   };
-
+  if (user) {
+    navigate("/");
+  }
   return (
     <div className="my-5 mx-2 p-2">
       <Row className="mb-3">

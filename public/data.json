@@ -1,6 +1,8 @@
 [
   {
-    "img": "./room.jpg",
+    "img": "https://ibb.co/m83MRd0",
+    "name":"product",
+    "price":"100",
     "description": "",
     "quantity":"10",
     "suplier": "Saunders Knight"
@@ -8,60 +10,80 @@
   {
     
     "img": "./room.jpg",
+    "name":"product",
+    "price":"100",
     "description": "",
     "quantity":"10",
     "suplier": "Taylor Melendez"
   },
   {
     "img": "./room.jpg",
+    "name":"product",
+    "price":"100",
     "description": "",
     "quantity":"10",
     "suplier": "Jeannie Becker"
   },
   {
     "img": "./room.jpg",
+    "name":"product",
+    "price":"100",
     "description": "",
     "quantity":"10",
     "suplier": "Shari Turner"
   },
   {
     "img": "./room.jpg",
+    "name":"product",
+    "price":"100",
     "description": "",
     "quantity":"10",
     "suplier": "Faye Hayes"
   },
   {
     "img": "./room.jpg",
+    "name":"product",
+    "price":"100",
     "description": "",
     "quantity":"10",
     "suplier": "Joyce Craig"
   },
   {
     "img": "./room.jpg",
+    "name":"product",
+    "price":"100",
     "description": "",
     "quantity":"10",
     "suplier": "Reese Weiss"
   },
   {
     "img": "./room.jpg",
+    "name":"product",
+    "price":"100",
     "description": "",
     "quantity":"10",
     "suplier": "Schmidt Wynn"
   },
   {
     "img": "./room.jpg",
+    "name":"product",
+    "price":"100",
     "description": "",
     "quantity":"10",
     "suplier": "Riddle Sharpe"
   },
   {
     "img": "./room.jpg",
+    "name":"product",
+    "price":"100",
     "description": "",
     "quantity":"10",
     "suplier": "Barr Carroll"
   },
   {
     "img": "./room.jpg",
+    "name":"product",
+    "price":"100",
     "description": "",
     "quantity":"10",
     "suplier": "Lorene Golden"
